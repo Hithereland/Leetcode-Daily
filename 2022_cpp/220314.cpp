@@ -7,6 +7,7 @@ public:
 
     vector<string> splitPath(string path) {
         vector<string> ret;
+
         for (int i = 0; i < path.size(); i++) {
             if (path[i] == '/')
                 ret.push_back("");
