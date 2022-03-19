@@ -1,6 +1,6 @@
 //
 // Created by z on 3/19/2022.
-//
+// # 895
 // In fact, this is not the version I code initially. I made it cleaner. I was so happy that I wrote such neat code until I saw someone else's code...
 
 class FreqStack {
