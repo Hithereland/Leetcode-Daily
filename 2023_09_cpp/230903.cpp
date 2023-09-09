@@ -5,7 +5,7 @@
  * very easy dp, o(n) space, not o(mn)
  */
 
- class Solution {
+class Solution {
 public:
     int uniquePaths(int m, int n) {
         vector<vector<int>> dp(2, vector<int>(n));
