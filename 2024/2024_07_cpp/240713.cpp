@@ -1,3 +1,7 @@
+// 2751. Robot Collisions
+// Hard
+// https://leetcode.com/problems/robot-collisions/
+
 #include <algorithm>
 #include <string>
 #include <vector>
