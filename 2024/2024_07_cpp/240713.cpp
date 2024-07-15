@@ -6,22 +6,24 @@
 #include <string>
 #include <vector>
 
-class Solution {
+class Solution
+{
 public:
-    typedef struct {
+    typedef struct
+    {
         int pos;
         int health;
         bool is_going_right;
         int order;
     } Robot;
 
-    static std::vector<int> survivedRobotsHealths(std::vector<int>& positions,
-                                                  std::vector<int>& healths,
-                                                  std::string directions) {
-
+    static std::vector<int> survivedRobotsHealths(std::vector<int> &positions,
+                                                  std::vector<int> &healths,
+                                                  std::string directions)
+    {
         std::vector<Robot> v_ans, v_goRight, v_data;
 
-        // prepare data for processiong
+        // prepare data for processing
         for (int i = 0; i < directions.size(); i++) {
             v_data.push_back(
                 {positions[i], healths[i], directions[i] == 'R', i});
@@ -31,7 +33,7 @@ public:
                   [](Robot a, Robot b) -> bool { return a.pos < b.pos; });
 
         // process
-        for (auto& robot : v_data) {
+        for (auto &robot : v_data) {
             if (robot.is_going_right) {
                 v_goRight.push_back(robot);
             } else {
@@ -63,14 +65,15 @@ public:
         std::sort(v_ans.begin(), v_ans.end(),
                   [](Robot a, Robot b) -> bool { return a.order < b.order; });
         std::vector<int> ret;
-        for (auto& robot : v_ans) {
+        for (auto &robot : v_ans) {
             ret.push_back(robot.health);
         }
         return ret;
     }
 };
 
-int main() {
+int main()
+{
     std::vector<int> positions = {3, 5, 2, 6}, healths = {10, 10, 15, 12};
     std::string directions = "RLRL";
     Solution::survivedRobotsHealths(positions, healths, directions);
