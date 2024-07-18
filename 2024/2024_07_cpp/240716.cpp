@@ -1,6 +1,6 @@
 // 2096. Step-By-Step Directions From a Binary Tree Node to Another
 // Medium
-// https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/submissions/
+// https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/
 
 #include <algorithm>
 #include <string>

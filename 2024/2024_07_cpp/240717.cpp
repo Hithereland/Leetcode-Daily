@@ -1,3 +1,7 @@
+// 1110. Delete Nodes And Return Forest
+// Medium
+// https://leetcode.com/problems/delete-nodes-and-return-forest/
+
 #include <unordered_set>
 #include <vector>
 
