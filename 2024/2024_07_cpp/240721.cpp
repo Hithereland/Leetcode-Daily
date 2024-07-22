@@ -6,6 +6,7 @@
 #include <queue>
 #include <utility>
 #include <vector>
+#include <algorithm>
 
 class Solution
 {

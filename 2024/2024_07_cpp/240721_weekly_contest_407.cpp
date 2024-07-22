@@ -5,6 +5,7 @@
 #include <vector>
 #include <unordered_set>
 #include <string>
+#include <cstdlib>
 
 class Solution_A
 {
@@ -77,10 +78,10 @@ class Solution_D
             long long curr_change = nums[i] - target[i];
             if ((prev_change ^ curr_change) < 0) {
                 prev_change = curr_change;
-                ret += abs(curr_change);
+                ret += std::abs(curr_change);
             } else {
-                if (abs(curr_change) > abs(prev_change)) {
-                    ret += abs(curr_change - prev_change);
+                if (std::abs(curr_change) > std::abs(prev_change)) {
+                    ret += std::abs(curr_change - prev_change);
                 }
                 prev_change = curr_change;
             }
