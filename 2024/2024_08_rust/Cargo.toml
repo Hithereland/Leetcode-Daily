@@ -18,3 +18,7 @@ path="./240803.rs"
 [[bin]]
 name="240804_weekly_contest_409"
 path="./240804_weekly_contest_409.rs"
+
+[[bin]]
+name="240804"
+path="./240804.rs"
