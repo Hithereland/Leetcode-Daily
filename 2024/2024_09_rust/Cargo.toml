@@ -1,0 +1,8 @@
+[package]
+name = "leetcode-daily-2409"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name="240918"
+path="./240918.rs"
